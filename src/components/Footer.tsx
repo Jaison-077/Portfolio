@@ -53,7 +53,7 @@ export default function Footer() {
                         <h4 className="text-primary font-semibold mb-4">Connect</h4>
                         <div className="flex gap-4">
                             <a
-                                href="https://github.com"
+                                href="https://github.com/Jaison-077"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="text-gray-400 hover:text-secondary transition-colors"
@@ -61,7 +61,7 @@ export default function Footer() {
                                 GitHub
                             </a>
                             <a
-                                href="https://linkedin.com"
+                                href="https://www.linkedin.com/in/jaison-sebastian-542412136/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="text-gray-400 hover:text-primary transition-colors"
