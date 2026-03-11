@@ -37,9 +37,9 @@ export default function Contact() {
                 <h2 className="text-3xl md:text-5xl font-bold text-center mb-4 gradient-text">
                     Get In Touch
                 </h2>
-                <div className="w-16 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mb-12"></div>
+                <div className="section-divider mb-12"></div>
 
-                <p className="text-center text-gray-400 mb-12 max-w-2xl mx-auto">
+                <p className="text-center text-gray-300 mb-12 max-w-2xl mx-auto text-lg">
                     I&apos;m always interested in hearing about new projects and opportunities. Feel free to reach out!
                 </p>
 
@@ -47,15 +47,15 @@ export default function Contact() {
                     {/* Contact Info */}
                     <div className="space-y-8">
                         <div className="group">
-                            <div className="flex items-start gap-4">
-                                <div className="w-12 h-12 bg-primary/20 border border-primary/50 rounded-lg flex items-center justify-center text-primary group-hover:bg-primary/30 transition-colors">
+                            <div className="flex items-start gap-4 p-4 rounded-lg hover:bg-dark/20 transition-all duration-300 transform hover:translate-x-2">
+                                <div className="w-12 h-12 bg-primary/20 border border-primary/50 rounded-lg flex items-center justify-center text-primary group-hover:bg-primary/30 group-hover:scale-110 transition-all duration-300">
                                     ✉️
                                 </div>
                                 <div>
-                                    <h3 className="font-semibold text-lg mb-1">Email</h3>
+                                    <h3 className="font-semibold text-lg mb-1 text-white">Email</h3>
                                     <a
                                         href="mailto:officialjaisonksebastian1999@gmail.com"
-                                        className="text-gray-400 hover:text-primary transition-colors"
+                                        className="text-gray-300 hover:text-primary transition-colors font-medium"
                                     >
                                         officialjaisonksebastian1999@gmail.com
                                     </a>
@@ -64,13 +64,13 @@ export default function Contact() {
                         </div>
 
                         <div className="group">
-                            <div className="flex items-start gap-4">
-                                <div className="w-12 h-12 bg-secondary/20 border border-secondary/50 rounded-lg flex items-center justify-center text-secondary group-hover:bg-secondary/30 transition-colors">
+                            <div className="flex items-start gap-4 p-4 rounded-lg hover:bg-dark/20 transition-all duration-300 transform hover:translate-x-2">
+                                <div className="w-12 h-12 bg-secondary/20 border border-secondary/50 rounded-lg flex items-center justify-center text-secondary group-hover:bg-secondary/30 group-hover:scale-110 transition-all duration-300">
                                     📍
                                 </div>
                                 <div>
-                                    <h3 className="font-semibold text-lg mb-1">Location</h3>
-                                    <p className="text-gray-400">
+                                    <h3 className="font-semibold text-lg text-white mb-1">Location</h3>
+                                    <p className="text-gray-300 font-medium">
                                         Delhi, India
                                     </p>
                                 </div>
@@ -78,13 +78,13 @@ export default function Contact() {
                         </div>
 
                         <div className="group">
-                            <div className="flex items-start gap-4">
-                                <div className="w-12 h-12 bg-accent/20 border border-accent/50 rounded-lg flex items-center justify-center text-accent group-hover:bg-accent/30 transition-colors">
+                            <div className="flex items-start gap-4 p-4 rounded-lg hover:bg-dark/20 transition-all duration-300 transform hover:translate-x-2">
+                                <div className="w-12 h-12 bg-accent/20 border border-accent/50 rounded-lg flex items-center justify-center text-accent group-hover:bg-accent/30 group-hover:scale-110 transition-all duration-300">
                                     💼
                                 </div>
                                 <div>
-                                    <h3 className="font-semibold text-lg mb-1">Let&apos;s Connect</h3>
-                                    <p className="text-gray-400">
+                                    <h3 className="font-semibold text-lg text-white mb-1">Let&apos;s Connect</h3>
+                                    <p className="text-gray-300 font-medium">
                                         Available for freelance projects and full-time roles
                                     </p>
                                 </div>
@@ -105,7 +105,7 @@ export default function Contact() {
                                         href={social.url}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="w-12 h-12 bg-dark border border-primary/30 rounded-lg flex items-center justify-center text-xl hover:bg-primary/20 hover:border-primary/60 transition-all duration-300"
+                                        className="w-12 h-12 bg-primary/20 border border-primary/50 rounded-lg flex items-center justify-center text-xl hover:bg-primary/40 hover:border-primary/80 hover:scale-125 hover:shadow-lg transition-all duration-300 glow-primary"
                                     >
                                         {social.icon}
                                     </a>
@@ -119,7 +119,7 @@ export default function Contact() {
                         <form onSubmit={handleSubmit} className="space-y-6">
                             <div className="group">
                                 <label htmlFor="name" className="block text-sm font-semibold mb-2 text-primary">
-                                    Name
+                                    Name  <span className="text-red-400">*</span>
                                 </label>
                                 <input
                                     type="text"
@@ -128,14 +128,14 @@ export default function Contact() {
                                     value={formData.name}
                                     onChange={handleChange}
                                     required
-                                    className="w-full px-4 py-3 bg-dark/50 border border-primary/30 rounded-lg focus:border-primary focus:outline-none text-light placeholder-gray-500 transition-colors"
+                                    className="input-field"
                                     placeholder="Your name"
                                 />
                             </div>
 
                             <div className="group">
                                 <label htmlFor="email" className="block text-sm font-semibold mb-2 text-primary">
-                                    Email
+                                    Email  <span className="text-red-400">*</span>
                                 </label>
                                 <input
                                     type="email"
@@ -144,14 +144,14 @@ export default function Contact() {
                                     value={formData.email}
                                     onChange={handleChange}
                                     required
-                                    className="w-full px-4 py-3 bg-dark/50 border border-primary/30 rounded-lg focus:border-primary focus:outline-none text-light placeholder-gray-500 transition-colors"
+                                    className="input-field"
                                     placeholder="your@email.com"
                                 />
                             </div>
 
                             <div className="group">
                                 <label htmlFor="subject" className="block text-sm font-semibold mb-2 text-primary">
-                                    Subject
+                                    Subject  <span className="text-red-400">*</span>
                                 </label>
                                 <input
                                     type="text"
@@ -160,14 +160,14 @@ export default function Contact() {
                                     value={formData.subject}
                                     onChange={handleChange}
                                     required
-                                    className="w-full px-4 py-3 bg-dark/50 border border-primary/30 rounded-lg focus:border-primary focus:outline-none text-light placeholder-gray-500 transition-colors"
-                                    placeholder="Subject"
+                                    className="input-field"
+                                    placeholder="What is this about?"
                                 />
                             </div>
 
                             <div className="group">
                                 <label htmlFor="message" className="block text-sm font-semibold mb-2 text-primary">
-                                    Message
+                                    Message  <span className="text-red-400">*</span>
                                 </label>
                                 <textarea
                                     id="message"
@@ -176,20 +176,20 @@ export default function Contact() {
                                     onChange={handleChange}
                                     required
                                     rows={5}
-                                    className="w-full px-4 py-3 bg-dark/50 border border-primary/30 rounded-lg focus:border-primary focus:outline-none text-light placeholder-gray-500 transition-colors resize-none"
+                                    className="input-field resize-none"
                                     placeholder="Your message..."
                                 ></textarea>
                             </div>
 
                             <button
                                 type="submit"
-                                className="w-full px-6 py-3 bg-primary text-dark font-semibold rounded-lg hover:bg-secondary transition-all duration-300 hover:shadow-lg glow-primary"
+                                className="w-full px-6 py-3 bg-gradient-to-r from-primary to-secondary text-white font-semibold rounded-lg hover:shadow-xl transition-all duration-300 hover:scale-105 active:scale-95 glow-primary"
                             >
                                 Send Message
                             </button>
 
                             {submitted && (
-                                <div className="p-4 bg-secondary/20 border border-secondary/50 rounded-lg text-secondary text-center font-semibold">
+                                <div className="p-4 bg-secondary/30 border border-secondary/50 rounded-lg text-secondary text-center font-semibold animate-pulse">
                                     ✓ Message sent successfully! I&apos;ll get back to you soon.
                                 </div>
                             )}
