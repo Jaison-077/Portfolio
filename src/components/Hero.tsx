@@ -54,7 +54,7 @@ export default function Hero() {
           style={{ animationDelay: '0.3s' }}
         >
           <button
-            className="px-8 py-4 bg-primary text-dark font-semibold rounded-lg hover:bg-secondary transition-all duration-300 hover:shadow-lg glow-primary text-lg"
+            className="px-8 py-4 bg-gradient-to-r from-primary to-secondary text-white font-semibold rounded-lg hover:shadow-xl transition-all duration-300 hover:scale-105 active:scale-95 text-lg glow-primary"
             onClick={() => {
               document.getElementById('projects')?.scrollIntoView({
                 behavior: 'smooth',
@@ -65,7 +65,7 @@ export default function Hero() {
             View My Work
           </button>
           <button
-            className="px-8 py-4 border-2 border-primary text-primary font-semibold rounded-lg hover:bg-primary/10 transition-all duration-300 text-lg"
+            className="px-8 py-4 border-2 border-primary text-primary font-semibold rounded-lg hover:bg-primary/20 hover:border-primary transition-all duration-300 hover:scale-105 active:scale-95 text-lg backdrop-blur-sm"
             onClick={() => {
               document.getElementById('contact')?.scrollIntoView({
                 behavior: 'smooth',

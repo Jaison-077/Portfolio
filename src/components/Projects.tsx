@@ -53,9 +53,9 @@ export default function Projects() {
         <h2 className="text-3xl md:text-5xl font-bold text-center mb-4 gradient-text">
           Featured Projects
         </h2>
-        <div className="w-16 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mb-12" />
+        <div className="section-divider mb-12"></div>
 
-        <p className="text-center text-gray-400 mb-12 max-w-2xl mx-auto">
+        <p className="text-center text-gray-300 mb-12 max-w-2xl mx-auto text-lg">
           Here are some of my recent projects showcasing my skills and expertise
           in building modern web applications.
         </p>
@@ -68,20 +68,20 @@ export default function Projects() {
               onMouseEnter={() => setHoveredId(project.id)}
               onMouseLeave={() => setHoveredId(null)}
             >
-              <div className="absolute inset-0 bg-gradient-to-r from-primary to-secondary rounded-xl blur-lg opacity-0 group-hover:opacity-30 transition-opacity duration-300" />
-              <div className="relative bg-dark/50 backdrop-blur-md border border-primary/30 rounded-xl p-6 h-full flex flex-col hover:border-primary/60 transition-all duration-300">
+              <div className="absolute inset-0 bg-gradient-to-r from-primary to-secondary rounded-xl blur-xl opacity-0 group-hover:opacity-40 transition-all duration-300" />
+              <div className="relative bg-dark/50 backdrop-blur-md border border-primary/30 rounded-xl p-6 h-full flex flex-col hover:border-primary/70 transition-all duration-300 hover:shadow-2xl group-hover:transform group-hover:scale-105">
                 {/* Image Placeholder */}
-                <div className="bg-gradient-to-br from-primary/20 to-secondary/20 rounded-lg aspect-video flex items-center justify-center mb-4 text-5xl group-hover:scale-110 transition-transform duration-300">
+                <div className="bg-gradient-to-br from-primary/30 to-secondary/30 rounded-lg aspect-video flex items-center justify-center mb-4 text-6xl group-hover:scale-125 transition-transform duration-300">
                   {project.image}
                 </div>
 
                 {/* Title */}
-                <h3 className="text-xl font-bold mb-2 group-hover:text-primary transition-colors">
+                <h3 className="text-xl font-bold mb-2 group-hover:text-primary transition-colors duration-300 line-clamp-2">
                   {project.title}
                 </h3>
 
                 {/* Description */}
-                <p className="text-gray-400 text-sm mb-4 flex-grow">
+                <p className="text-gray-300 text-sm mb-4 flex-grow leading-relaxed">
                   {project.description}
                 </p>
 
@@ -90,7 +90,7 @@ export default function Projects() {
                   {project.tags.map((tag) => (
                     <span
                       key={tag}
-                      className="px-3 py-1 bg-primary/20 border border-primary/50 rounded-full text-primary text-xs font-semibold"
+                      className="px-3 py-1 bg-primary/20 border border-primary/50 rounded-full text-primary text-xs font-semibold hover:bg-primary/30 hover:border-primary/80 transition-all duration-300"
                     >
                       {tag}
                     </span>
@@ -98,7 +98,7 @@ export default function Projects() {
                 </div>
 
                 {/* Link */}
-                <button className="w-full py-2 bg-primary text-dark font-semibold rounded-lg hover:bg-secondary transition-all duration-300 text-sm">
+                <button className="w-full py-2 bg-gradient-to-r from-primary to-secondary text-white font-semibold rounded-lg hover:shadow-lg transition-all duration-300 text-sm active:scale-95 transform hover:scale-105 glow-primary">
                   View Project →
                 </button>
               </div>

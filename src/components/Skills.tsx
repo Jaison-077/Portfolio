@@ -41,9 +41,9 @@ export default function Skills() {
                 <h2 className="text-3xl md:text-5xl font-bold text-center mb-4 gradient-text">
                     Skills & Expertise
                 </h2>
-                <div className="w-16 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mb-12"></div>
+                <div className="section-divider mb-12"></div>
 
-                <p className="text-center text-gray-400 mb-12 max-w-2xl mx-auto">
+                <p className="text-center text-gray-300 mb-12 max-w-2xl mx-auto text-lg">
                     I have extensive experience with modern technologies and tools for building scalable web applications.
                 </p>
 
@@ -51,30 +51,30 @@ export default function Skills() {
                     {skillCategories.map((category, idx) => (
                         <div
                             key={idx}
-                            className="group"
+                            className="group relative"
                         >
-                            <div className="absolute inset-0 bg-gradient-to-r from-primary to-secondary rounded-xl blur-lg opacity-0 group-hover:opacity-20 transition-opacity duration-300"></div>
-                            <div className="relative bg-dark/50 backdrop-blur-md border border-primary/30 rounded-xl p-8 group-hover:border-primary/60 transition-all duration-300">
-                                <h3 className="text-2xl font-bold mb-6 text-primary">
+                            <div className="absolute inset-0 bg-gradient-to-r from-primary to-secondary rounded-xl blur-lg opacity-0 group-hover:opacity-30 transition-opacity duration-300"></div>
+                            <div className="relative bg-dark/50 backdrop-blur-md border border-primary/30 rounded-xl p-8 group-hover:border-primary/70 transition-all duration-300 group-hover:shadow-xl hover:scale-105 transform">
+                                <h3 className="text-2xl font-bold mb-6 gradient-text">
                                     {category.category}
                                 </h3>
 
                                 <div className="space-y-6">
                                     {category.skills.map((skill) => (
-                                        <div key={skill.name}>
-                                            <div className="flex justify-between items-center mb-2">
-                                                <span className="font-semibold">{skill.name}</span>
-                                                <span className="text-primary text-sm font-bold">
+                                        <div key={skill.name} className="group/skill">
+                                            <div className="flex justify-between items-center mb-3">
+                                                <span className="font-semibold text-gray-200 group-hover/skill:text-white transition-colors">{skill.name}</span>
+                                                <span className="text-primary text-sm font-bold bg-primary/20 px-2 py-1 rounded-full">
                                                     {skill.level}%
                                                 </span>
                                             </div>
-                                            <div className="w-full bg-gray-700 rounded-full h-2 overflow-hidden">
+                                            <div className="w-full bg-dark/50 rounded-full h-3 overflow-hidden border border-primary/20">
                                                 <div
-                                                    className="h-full bg-gradient-to-r from-teamsPrimary to-teamsSecondary rounded-full transition-all duration-500 border border-teamsBorder shadow-lg"
+                                                    className="h-full bg-gradient-to-r from-teamsPrimary via-primary to-teamsSecondary rounded-full transition-all duration-500 shadow-lg group-hover/skill:shadow-2xl"
                                                     style={{
                                                         width: `${skill.level}%`,
                                                         boxShadow: '0 0 12px #6264A7, 0 0 6px #464775',
-                                                        background: `linear-gradient(90deg, #6264A7 0%, #464775 100%)`,
+                                                        background: `linear-gradient(90deg, #6264A7 0%, #00D9FF 50%, #464775 100%)`,
                                                     }}
                                                 ></div>
                                             </div>

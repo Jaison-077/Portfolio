@@ -18,11 +18,11 @@ export default function Navigation() {
 
   return (
     <>
-      <nav className="fixed top-0 w-full z-50 bg-dark/80 backdrop-blur-md border-b border-primary/20">
+      <nav className="fixed top-0 w-full z-50 bg-dark/70 backdrop-blur-lg border-b border-primary/20 shadow-lg">
         <div className="max-w-6xl mx-auto px-4 py-4">
           <div className="flex justify-between items-center">
             {/* Logo */}
-            <Link href="#home" className="text-2xl font-bold gradient-text">
+            <Link href="#home" className="text-2xl font-bold gradient-text hover:scale-105 transition-transform duration-300">
               JAISON
             </Link>
 
@@ -32,14 +32,14 @@ export default function Navigation() {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className="text-gray-300 hover:text-primary transition-colors duration-300"
+                  className="text-gray-300 hover:text-primary hover:scale-105 transition-all duration-300 font-medium relative after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5 after:bg-gradient-to-r after:from-primary after:to-secondary after:transition-all after:duration-300 hover:after:w-full"
                 >
                   {item.label}
                 </Link>
               ))}
               <button
                 type="button"
-                className="px-6 py-2 bg-primary text-dark font-semibold rounded-lg hover:bg-secondary transition-all duration-300 hover:shadow-lg glow-primary"
+                className="px-6 py-2 bg-gradient-to-r from-primary to-secondary text-white font-semibold rounded-lg hover:shadow-lg transition-all duration-300 hover:scale-105 active:scale-95 glow-primary"
                 onClick={() => setShowResume(true)}
               >
                 Resume
