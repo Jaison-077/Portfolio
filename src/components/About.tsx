@@ -30,10 +30,10 @@ export default function About() {
                         <div className="group">
                             <h3 className="text-2xl font-bold mb-4 text-primary">About Me</h3>
                             <p className="text-gray-300 leading-relaxed mb-4">
-                                I'm a passionate .NET Developer and Backend Engineer with 3.6+ years of professional experience building scalable, high-performance enterprise applications. My expertise spans full-stack development with a strong focus on backend architecture, RESTful API design, and cloud technologies.
+                                I&apos;m a passionate .NET Developer and Backend Engineer with 3.6+ years of professional experience building scalable, high-performance enterprise applications. My expertise spans full-stack development with a strong focus on backend architecture, RESTful API design, and cloud technologies.
                             </p>
                             <p className="text-gray-300 leading-relaxed">
-                                I specialize in designing and implementing robust backend systems using ASP.NET Core, optimizing SQL Server databases, and deploying solutions on Azure cloud infrastructure. I'm passionate about writing clean, maintainable code and architecting solutions that scale.
+                                I specialize in designing and implementing robust backend systems using ASP.NET Core, optimizing SQL Server databases, and deploying solutions on Azure cloud infrastructure. I&apos;m passionate about writing clean, maintainable code and architecting solutions that scale.
                             </p>
                         </div>
 
