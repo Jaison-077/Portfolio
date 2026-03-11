@@ -2,34 +2,45 @@
 
 const skillCategories = [
     {
-        category: 'Frontend',
+        category: 'Backend Development',
         skills: [
-            { name: 'Angular', level: 90 },
-            { name: 'HTML', level: 85 },
-            { name: 'CSS', level: 85 },
-            { name: 'JavaScript', level: 80 },
-            { name: 'TypeScript', level: 75 },
-            { name: 'Bootstrap', level: 80 },
-            { name: 'jQuery', level: 70 },
-        ],
-    },
-    {
-        category: 'Backend',
-        skills: [
+            { name: 'ASP.NET Core', level: 90 },
+            { name: 'Web API / REST APIs', level: 90 },
+            { name: 'C#', level: 90 },
             { name: '.NET Core MVC', level: 85 },
             { name: '.NET Framework', level: 80 },
-            { name: 'C#', level: 85 },
-            { name: 'Entity Framework', level: 80 },
-            { name: 'REST APIs', level: 85 },
+            { name: 'Entity Framework', level: 85 },
+            { name: 'LINQ', level: 85 },
         ],
     },
     {
-        category: 'Database & Cloud',
+        category: 'Database & Data',
         skills: [
-            { name: 'SQL Server', level: 85 },
-            { name: 'Azure App Services', level: 70 },
-            { name: 'Azure SQL Database', level: 70 },
-            { name: 'Database Design', level: 80 },
+            { name: 'SQL Server', level: 90 },
+            { name: 'Database Design', level: 85 },
+            { name: 'Query Optimization', level: 80 },
+            { name: 'T-SQL', level: 85 },
+            { name: 'Data Modeling', level: 80 },
+        ],
+    },
+    {
+        category: 'Frontend & UI',
+        skills: [
+            { name: 'Angular', level: 85 },
+            { name: 'HTML/CSS', level: 85 },
+            { name: 'TypeScript', level: 80 },
+            { name: 'JavaScript', level: 85 },
+            { name: 'Responsive Design', level: 80 },
+        ],
+    },
+    {
+        category: 'Cloud & DevOps',
+        skills: [
+            { name: 'Azure App Services', level: 75 },
+            { name: 'Azure SQL Database', level: 75 },
+            { name: 'Azure Deployment', level: 70 },
+            { name: 'Git / GitHub', level: 85 },
+            { name: 'CI/CD Basics', level: 75 },
         ],
     },
 ]
@@ -89,14 +100,18 @@ export default function Skills() {
                 {/* Additional Skills */}
                 <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4">
                     {[
-                        'MES Systems',
-                        'RFID Integration',
-                        'Git',
-                        'GitHub',
+                        'Microservices',
+                        'Dependency Injection',
+                        'Authentication (JWT)',
+                        'RESTful Architecture',
                         'Visual Studio',
                         'VS Code',
-                        'Postman',
-                        'ServiceNow',
+                        'Postman / Swagger',
+                        'Git / GitHub',
+                        'SOLID Principles',
+                        'MES Systems',
+                        'RFID Integration',
+                        'Azure DevOps',
                     ].map((skill) => (
                         <div
                             key={skill}

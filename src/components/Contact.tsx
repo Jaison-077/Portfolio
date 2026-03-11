@@ -35,12 +35,15 @@ export default function Contact() {
         <section id="contact" className="min-h-screen flex items-center justify-center py-20 px-4">
             <div className="max-w-4xl mx-auto w-full">
                 <h2 className="text-3xl md:text-5xl font-bold text-center mb-4 gradient-text">
-                    Get In Touch
+                    Let&apos;s Work Together
                 </h2>
                 <div className="section-divider mb-12"></div>
 
-                <p className="text-center text-gray-300 mb-12 max-w-2xl mx-auto text-lg">
-                    I&apos;m always interested in hearing about new projects and opportunities. Feel free to reach out!
+                <p className="text-center text-gray-300 mb-4 max-w-2xl mx-auto text-lg font-semibold">
+                    Currently Open to .NET Developer & Backend Engineer Opportunities
+                </p>
+                <p className="text-center text-gray-400 mb-12 max-w-2xl mx-auto text-lg">
+                    I&apos;m actively looking for Senior .NET Developer, Backend Engineer, or Full-Stack roles. Feel free to reach out whether it&apos;s a job inquiry, project collaboration, or just to connect!
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
@@ -83,9 +86,9 @@ export default function Contact() {
                                     💼
                                 </div>
                                 <div>
-                                    <h3 className="font-semibold text-lg text-white mb-1">Let&apos;s Connect</h3>
+                                    <h3 className="font-semibold text-lg text-white mb-1">Open to Opportunities</h3>
                                     <p className="text-gray-300 font-medium">
-                                        Available for freelance projects and full-time roles
+                                        Available for Full-time, Contract, or Project-based roles
                                     </p>
                                 </div>
                             </div>

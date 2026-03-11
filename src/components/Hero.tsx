@@ -29,7 +29,7 @@ export default function Hero() {
       <div className="relative z-10 text-center max-w-4xl mx-auto">
         <div className="mb-6 animate-slideInUp">
           <span className="inline-block px-4 py-2 bg-primary/20 border border-primary/50 rounded-full text-primary text-sm font-semibold">
-            Welcome to my portfolio
+            Backend Engineer | .NET Developer
           </span>
         </div>
 
@@ -37,44 +37,95 @@ export default function Hero() {
           className="text-5xl md:text-7xl font-bold mb-6 animate-slideInUp"
           style={{ animationDelay: '0.1s' }}
         >
-          <span className="block mb-2">Hi, I&apos;m</span>
-          <span className="gradient-text block">Jaison K Sebastian</span>
+          <span className="block mb-2">Hello, I&apos;m</span>
+          <span className="gradient-text block">Jaison Sebastian</span>
         </h1>
 
         <p
-          className="text-xl md:text-2xl text-gray-400 mb-8 max-w-2xl mx-auto animate-slideInUp"
+          className="text-xl md:text-2xl text-gray-300 mb-3 max-w-2xl mx-auto animate-slideInUp font-semibold"
+          style={{ animationDelay: '0.15s' }}
+        >
+          .NET Developer | Backend Engineer
+        </p>
+
+        <p
+          className="text-lg md:text-xl text-gray-400 mb-8 max-w-2xl mx-auto animate-slideInUp"
           style={{ animationDelay: '0.2s' }}
         >
-          Angular &amp; .NET Developer specializing in enterprise-grade web
-          applications and manufacturing execution systems
+          Building scalable backend systems and enterprise applications with ASP.NET Core, Web APIs, and cloud technologies
         </p>
 
         <div
-          className="flex flex-col sm:flex-row gap-4 justify-center animate-slideInUp"
-          style={{ animationDelay: '0.3s' }}
+          className="flex flex-wrap justify-center gap-2 mb-10 animate-slideInUp"
+          style={{ animationDelay: '0.25s' }}
         >
-          <button
-            className="px-8 py-4 bg-gradient-to-r from-primary to-secondary text-white font-semibold rounded-lg hover:shadow-xl transition-all duration-300 hover:scale-105 active:scale-95 text-lg glow-primary"
-            onClick={() => {
-              document.getElementById('projects')?.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start',
-              })
-            }}
+          {['ASP.NET Core', 'Web API', 'C#', 'SQL Server', 'Azure', 'Angular'].map((tech) => (
+            <span
+              key={tech}
+              className="px-3 py-1 bg-secondary/20 border border-secondary/50 rounded-full text-secondary text-sm font-semibold"
+            >
+              {tech}
+            </span>
+          ))}
+        </div>
+          <div
+            className="flex flex-col sm:flex-row gap-4 justify-center animate-slideInUp"
+            style={{ animationDelay: '0.35s' }}
           >
-            View My Work
-          </button>
-          <button
-            className="px-8 py-4 border-2 border-primary text-primary font-semibold rounded-lg hover:bg-primary/20 hover:border-primary transition-all duration-300 hover:scale-105 active:scale-95 text-lg backdrop-blur-sm"
-            onClick={() => {
-              document.getElementById('contact')?.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start',
-              })
-            }}
+            <button
+              className="px-8 py-4 bg-gradient-to-r from-primary to-secondary text-white font-semibold rounded-lg hover:shadow-xl transition-all duration-300 hover:scale-105 active:scale-95 text-lg glow-primary"
+              onClick={() => {
+                document.getElementById('projects')?.scrollIntoView({
+                  behavior: 'smooth',
+                  block: 'start',
+                })
+              }}
+            >
+              View My Projects
+            </button>
+            <button
+              className="px-8 py-4 border-2 border-primary text-primary font-semibold rounded-lg hover:bg-primary/20 hover:border-primary transition-all duration-300 hover:scale-105 active:scale-95 text-lg backdrop-blur-sm"
+              onClick={() => {
+                document.getElementById('contact')?.scrollIntoView({
+                  behavior: 'smooth',
+                  block: 'start',
+                })
+              }}
+            >
+              Contact Me
+            </button>
+          </div>
+
+        {/* Social Links */}
+        <div
+          className="flex justify-center gap-4 mt-10 animate-slideInUp"
+          style={{ animationDelay: '0.4s' }}
+        >
+          <a
+            href="https://github.com/Jaison-077"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-12 h-12 bg-primary/20 border border-primary/50 rounded-full flex items-center justify-center text-xl hover:bg-primary/40 hover:border-primary/80 hover:scale-125 transition-all duration-300 glow-primary"
+            title="GitHub"
           >
-            Get in Touch
-          </button>
+            🐙
+          </a>
+          <a
+            href="https://www.linkedin.com/in/jaison-sebastian-542412136/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-12 h-12 bg-primary/20 border border-primary/50 rounded-full flex items-center justify-center text-xl hover:bg-primary/40 hover:border-primary/80 hover:scale-125 transition-all duration-300 glow-primary"
+            title="LinkedIn"
+          >
+            💼
+          </a>
+          <a
+            href="#contact"
+            className="w-12 h-12 bg-secondary/20 border border-secondary/50 rounded-full flex items-center justify-center text-xl hover:bg-secondary/40 hover:border-secondary/80 hover:scale-125 transition-all duration-300"
+            title="Download Resume"
+          >
+            📄
+          </a>
         </div>
 
         {/* Scroll Indicator */}
