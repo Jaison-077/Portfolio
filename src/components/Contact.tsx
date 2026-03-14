@@ -22,13 +22,29 @@ export default function Contact() {
         }))
     }
 
-    const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+    const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault()
-        // Here you would typically send the form data to a server
-        console.log('Form submitted:', formData)
-        setSubmitted(true)
-        setFormData({ name: '', email: '', subject: '', message: '' })
-        setTimeout(() => setSubmitted(false), 3000)
+        try {
+            const response = await fetch('/api/send-email', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData),
+            })
+
+            if (response.ok) {
+                setSubmitted(true)
+                setFormData({ name: '', email: '', subject: '', message: '' })
+                setTimeout(() => setSubmitted(false), 3000)
+            } else {
+                console.error('Failed to send email:', response.statusText)
+                alert('Failed to send message. Please try again.')
+            }
+        } catch (error) {
+            console.error('Error submitting form:', error)
+            alert('Error sending message. Please try again.')
+        }
     }
 
     return (
