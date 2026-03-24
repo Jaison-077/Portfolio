@@ -16,50 +16,52 @@ type Project = {
 const projects: Project[] = [
   {
     id: 1,
-    title: 'Manufacturing Reporting & RFID Tracking System',
+    title: 'Daily Consumption Reporting (DCR) Portal',
     description:
-      'Enterprise-scale manufacturing dashboard and backend system for real-time production monitoring, efficiency tracking, and RFID-based asset management.',
+      'Enterprise-scale system to digitalize and streamline material consumption tracking, validation, and reporting across manufacturing production lines. Improved data accuracy, reduced manual intervention, and enabled real-time visibility into production consumption and variance analysis.',
     achievements: [
-      'Built ASP.NET Core REST API handling 1000+ concurrent requests',
-      'Designed SQL Server database for real-time data processing',
-      'Developed Angular dashboards with real-time data visualization',
-      'Integrated RFID scanning for production flow tracking',
-      'Deployed on Azure with auto-scaling capabilities'
+      'Designed and developed RESTful APIs for data submission, validation, and approval workflows',
+      'Implemented complex business validation rules (UoM checks, BOM-level validation, variance threshold checks)',
+      'Designed optimized SQL Server schemas for transactions, summaries, and audit logs',
+      'Integrated with MES/ERP systems for actual vs. standard BOM comparison and deviation detection',
+      'Developed role-based access control (RBAC) with multi-level approval workflows',
+      'Implemented comprehensive audit logging for compliance and traceability'
     ],
-    tags: ['ASP.NET Core', 'Web API', 'SQL Server', 'Angular', 'Azure', 'RFID'],
-    image: '🏭',
+    tags: ['.NET Core API', 'C#', 'SQL Server', 'REST APIs', 'MES/ERP Integration', 'RBAC'],
+    image: '📊',
     github: 'https://github.com/Jaison-077',
   },
   {
     id: 2,
-    title: 'Online Charity Management System',
+    title: 'Manufacturing Reporting & RFID Tracking System',
     description:
-      'Full-stack web application for managing NGO donations, fund distribution, and donor relationships with secure payment processing.',
+      'Backend-driven system for manufacturing reporting and RFID-based tracking, enabling real-time visibility into production processes. Improved traceability, reduced manual tracking efforts, and ensured accurate production data flow across systems.',
     achievements: [
-      'Developed secure donation management APIs with payment gateway integration',
-      'Implemented role-based access control and authentication',
-      'Built responsive Angular frontend for donor registration and tracking',
-      'Optimized SQL queries reducing data retrieval time by 40%',
-      'Created comprehensive reporting module for fund analysis'
+      'Designed and developed backend services using .NET Core MVC with secure RESTful APIs',
+      'Implemented RFID data processing logic for manufacturing unit tracking and traceability',
+      'Designed and maintained SQL Server databases for RFID data and production records',
+      'Integrated backend services with Manufacturing Execution Systems (MES) for real-time synchronization',
+      'Optimized backend workflows for real-time data processing and system reliability',
+      'Enabled accurate production data flow across integrated manufacturing systems'
     ],
-    tags: ['ASP.NET Core', '.NET Core MVC', 'SQL Server', 'Entity Framework', 'Angular'],
-    image: '🤝',
+    tags: ['.NET Core MVC', 'C#', 'SQL Server', 'REST APIs', 'MES Integration', 'RFID Processing'],
+    image: '🏭',
     github: 'https://github.com/Jaison-077',
   },
   {
     id: 3,
-    title: 'Online Food Order Processing System',
+    title: 'Online Charity Management System',
     description:
-      'Scalable backend system for restaurant management with order processing, payment handling, and real-time order tracking.',
+      'Full-stack web application for managing NGO donations, fund distribution, and donor relationships with secure payment processing and comprehensive financial reporting.',
     achievements: [
-      'Designed RESTful APIs for order management and vendor coordination',
-      'Implemented microservices architecture for payment and inventory',
-      'Built real-time order status tracking system',
-      'Created comprehensive testing suite with 85% code coverage',
-      'Optimized API response time from 800ms to 150ms'
+      'Developed secure donation management APIs with payment gateway integration',
+      'Implemented role-based access control and multi-factor authentication',
+      'Built responsive Angular frontend for donor registration and tracking',
+      'Optimized SQL queries reducing data retrieval time by 40%',
+      'Created comprehensive financial reporting and fund analysis modules'
     ],
-    tags: ['ASP.NET Core', 'Web API', 'C#', 'SQL Server', 'Angular'],
-    image: '🍕',
+    tags: ['ASP.NET Core', '.NET Core MVC', 'SQL Server', 'Entity Framework', 'Angular'],
+    image: '🤝',
     github: 'https://github.com/Jaison-077',
   },
 ]
